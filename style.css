@@ -1,0 +1,98 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100..900;1,100..900&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: "Roboto", sans-serif;
+    font-weight: 300;
+}
+
+body {
+    background-image: url("https://images.pexels.com/photos/14251880/pexels-photo-14251880.jpeg");
+    background-size: cover;
+    display: flex;
+    height: 100vh;
+    /* preciso colocar a medida para que o align-items calcule a posição */
+    width: 100vw;
+    justify-content: center;
+    align-items: center;
+    color: #ffffff;
+
+
+}
+
+.container-conteudo {
+    background-color: rgba(0, 0, 0, 0.8);
+    border-radius: 15px;
+    box-shadow: 5px 5px 20px #000000;
+    width: 95%; /*largura*/
+    max-width: 350px; /*largura máxima - ocupa 95% da tela, mas não passa de 420px em telas maiores*/
+}
+
+.container-geral {
+    display: flex;
+    flex-direction: column;
+    padding: 20px;
+    gap: 15px;
+}
+
+.container-search {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin-bottom: 20px;
+}
+
+input {
+    border: none;
+    outline: none;
+    /*remove a linha de fora quando clica na caixa do input*/
+    border-radius: 20px;
+    padding: 5px;
+    cursor: pointer;
+    background-color: rgba(95, 95, 95, 0.5);
+    width: 250px;
+    color: #ffffff;
+
+}
+
+input::placeholder {
+    color: #7d7c7c;
+}
+
+input:hover {
+    background-color: rgba(153, 152, 152, 0.5);
+}
+
+button {
+    border: none;
+    outline: none;
+    /*remove a linha de fora quando clica na caixa do input*/
+    border-radius: 20px;
+    padding: 0px 2px;
+    cursor: pointer;
+    background-color: rgba(95, 95, 95, 0.5);
+}
+
+button:hover {
+    background-color: rgba(153, 152, 152, 0.5);
+}
+
+.image-search {
+    width: 25px;
+}
+
+.caracteristica-tempo{
+    text-transform: capitalize; /* deixa a primeira letra maiuscula*/
+}
+
+.container-icone-tempo{
+    display: flex;
+    gap: 10px;
+    align-items: center;
+}
+
+.icone{
+    width: 50px;
+}
